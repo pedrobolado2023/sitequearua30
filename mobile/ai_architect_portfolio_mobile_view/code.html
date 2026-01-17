@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Q-aura Automações - Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00f0ff",
+                        "accent-magenta": "#ff00ff",
+                        "background-dark": "#0a0a0a",
+                        "surface-dark": "#121212",
+                        "glass": "rgba(255, 255, 255, 0.05)",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(13, 89, 242, 0.15);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gray-900 flex justify-center items-start min-h-screen py-0 md:py-10 font-display selection:bg-primary selection:text-white">
+    <div
+        class="w-full md:max-w-[430px] bg-background-dark min-h-screen md:rounded-[32px] md:shadow-2xl overflow-hidden relative border-x border-white/5 md:border md:border-white/10 flex flex-col">
+        <header
+            class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-[#0a0a0a]/80 backdrop-blur-xl border-b border-white/5">
+            <div class="flex items-center gap-2">
+                <div
+                    class="size-8 rounded bg-gradient-to-br from-primary to-accent-magenta flex items-center justify-center text-black font-bold text-lg shadow-lg">
+                    QA
+                </div>
+                <span class="text-white font-bold text-sm">Q-aura Automações</span>
+            </div>
+            <button id="mobile-menu-btn" class="text-white hover:text-primary transition-colors p-1">
+                <span class="material-symbols-outlined text-[28px]">menu</span>
+            </button>
+            <!-- Nav Drawer -->
+            <div id="mobile-drawer"
+                class="fixed inset-0 z-[60] bg-background-dark/95 backdrop-blur-xl translate-x-full transition-transform duration-300">
+                <div class="flex flex-col h-full p-8">
+                    <div class="flex justify-between items-center mb-10">
+                        <div
+                            class="size-10 rounded bg-gradient-to-br from-primary to-accent-magenta flex items-center justify-center text-black font-bold text-xl">
+                            QA</div>
+                        <button id="close-drawer" class="text-white"><span
+                                class="material-symbols-outlined text-3xl">close</span></button>
+                    </div>
+                    <nav class="flex flex-col gap-6 text-2xl font-bold text-white">
+                        <a href="#solutions" class="smooth-scroll">Soluções</a>
+                        <a href="#processo" class="smooth-scroll">Processo</a>
+                        <a href="#portfolio" class="smooth-scroll">Portfólio</a>
+                        <a href="#sobre" class="smooth-scroll">Sobre</a>
+                        <a href="#contato" class="smooth-scroll">Contato</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 overflow-y-auto overflow-x-hidden">
+            <section
+                class="relative flex flex-col items-center justify-center min-h-[560px] px-6 text-center overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center z-0"
+                    data-alt="Abstract dark digital network background with subtle blue nodes"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoS8f6PxonKXK7muZHIIJ_bCJ9ccLqJ6lolsacLp5ANIMlawWeUrLi92Ey9cuPdMsTOMp6-VWKISzZtTO1ayfoGE-SbYBdfPx23s60-L8VaMzpXGfSfq6ayc0IqnPxi_u5rAgfizYLFNfKbbA8SYdI7Jxx5AvMqc7NOlG5wQyHfdsRSNi6SJ2ixK3Y6UK4rfjzCUDm88Lno03F6c_LjheL6VkSLox9bMAatgGvbg5tASC-B0xSjrxr0pnOCtgzOvr5ALP1upXsJQ");'>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/90 via-[#0a0a0a]/80 to-[#0a0a0a] z-10">
+                </div>
+                <div class="relative z-20 flex flex-col items-center gap-6 max-w-sm">
+                    <div
+                        class="size-16 rounded-full border border-primary/30 bg-primary/10 flex items-center justify-center mb-2 animate-pulse">
+                        <span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+                    </div>
+                    <h1 class="text-white text-4xl font-bold leading-[1.1] tracking-tight">
+                        Vamos além do código para levar <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-magenta font-black">inteligência</span>
+                        ao seu negócio.
+                    </h1>
+                    <p class="text-gray-400 text-base leading-relaxed">
+                        Desenvolvedor de Automações Digitais.<br />Transformando dados em vantagem competitiva.
+                    </p>
+                    <button
+                        onclick="window.open('https://wa.me/5562993473656?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Q-aura!', '_blank')"
+                        class="mt-4 flex w-full max-w-[240px] items-center justify-center rounded-lg bg-primary h-12 px-6 text-black text-base font-bold shadow-[0_0_15px_rgba(0,240,255,0.4)] hover:opacity-90 transition-all transform active:scale-95">
+                        Fale Comigo
+                    </button>
+                </div>
+            </section>
+            <section id="solutions" class="px-6 py-12 relative">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-gradient-radial from-primary/5 to-transparent opacity-50 pointer-events-none">
+                </div>
+                <h2 class="text-white text-2xl font-bold mb-6 flex items-center gap-2">
+                    <span class="w-1 h-6 bg-accent-magenta rounded-full"></span>
+                    Soluções
+                </h2>
+                <div class="flex flex-col gap-4">
+                    <div class="glass-card rounded-xl p-5 neon-glow relative overflow-hidden group">
+                        <div class="absolute right-[-20px] top-[-20px] bg-primary/20 w-32 h-32 rounded-full blur-2xl">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="p-2 bg-primary/20 rounded-lg text-primary">
+                                    <span class="material-symbols-outlined">smart_toy</span>
+                                </div>
+                                <span
+                                    class="material-symbols-outlined text-gray-500 text-xl group-hover:text-white transition-colors">arrow_outward</span>
+                            </div>
+                            <h3 class="text-white text-xl font-bold mb-2">IA &amp; Chatbots</h3>
+                            <p class="text-gray-400 text-sm">Agentes autônomos e LLMs personalizados para automação de
+                                atendimento e processos.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card rounded-xl p-5 relative overflow-hidden">
+                        <div class="flex items-center gap-4">
+                            <div class="p-2 bg-white/5 rounded-lg text-white">
+                                <span class="material-symbols-outlined">cloud</span>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-lg font-bold">Cloud Architecture</h3>
+                                <p class="text-gray-500 text-xs mt-0.5">AWS &amp; Azure Scalable Infra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card rounded-xl p-5 relative overflow-hidden">
+                        <div class="flex items-center gap-4">
+                            <div class="p-2 bg-white/5 rounded-lg text-white">
+                                <span class="material-symbols-outlined">dataset</span>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-lg font-bold">Data Engineering</h3>
+                                <p class="text-gray-500 text-xs mt-0.5">ETL Pipelines &amp; Warehousing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card rounded-xl p-5 relative overflow-hidden">
+                        <div class="flex items-center gap-4">
+                            <div class="p-2 bg-white/5 rounded-lg text-white">
+                                <span class="material-symbols-outlined">lightbulb</span>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-lg font-bold">Consultoria Tech</h3>
+                                <p class="text-gray-500 text-xs mt-0.5">Estratégia de Transformação Digital</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tech-stack" class="px-6 py-8 relative">
+                <h2
+                    class="text-white text-xs font-bold mb-6 flex items-center gap-2 uppercase tracking-widest opacity-80">
+                    <span class="w-1 h-3 bg-gradient-to-b from-primary to-accent-magenta rounded-full"></span>
+                    Tech Stack
+                </h2>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="flex flex-col items-center gap-2">
+                        <div
+                            class="size-14 rounded-2xl bg-surface-dark border border-white/5 flex items-center justify-center shadow-[0_0_15px_rgba(13,89,242,0.15)] transition-shadow">
+                            <span class="material-symbols-outlined text-white text-[28px]">code_blocks</span>
+                        </div>
+                        <span
+                            class="text-[10px] text-gray-400 font-medium uppercase tracking-wide text-center">React</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div
+                            class="size-14 rounded-2xl bg-surface-dark border border-white/5 flex items-center justify-center shadow-[0_0_15px_rgba(240,0,255,0.15)] transition-shadow">
+                            <span class="material-symbols-outlined text-white text-[28px]">psychology</span>
+                        </div>
+                        <span
+                            class="text-[10px] text-gray-400 font-medium uppercase tracking-wide text-center leading-tight">IA
+                            Gen</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div
+                            class="size-14 rounded-2xl bg-surface-dark border border-white/5 flex items-center justify-center shadow-[0_0_15px_rgba(13,89,242,0.15)] transition-shadow">
+                            <span class="material-symbols-outlined text-white text-[28px]">terminal</span>
+                        </div>
+                        <span
+                            class="text-[10px] text-gray-400 font-medium uppercase tracking-wide text-center">Python</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div
+                            class="size-14 rounded-2xl bg-surface-dark border border-white/5 flex items-center justify-center shadow-[0_0_15px_rgba(240,0,255,0.15)] transition-shadow">
+                            <span
+                                class="material-symbols-outlined text-white text-[28px]">precision_manufacturing</span>
+                        </div>
+                        <span
+                            class="text-[10px] text-gray-400 font-medium uppercase tracking-wide text-center truncate w-full">Automação</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div
+                            class="size-14 rounded-2xl bg-surface-dark border border-white/5 flex items-center justify-center shadow-[0_0_15px_rgba(13,89,242,0.15)] transition-shadow">
+                            <span class="material-symbols-outlined text-white text-[28px]">cloud_circle</span>
+                        </div>
+                        <span
+                            class="text-[10px] text-gray-400 font-medium uppercase tracking-wide text-center">Cloud</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div
+                            class="size-14 rounded-2xl bg-surface-dark border border-white/5 flex items-center justify-center shadow-[0_0_15px_rgba(240,0,255,0.15)] transition-shadow">
+                            <span class="material-symbols-outlined text-white text-[28px]">storage</span>
+                        </div>
+                        <span
+                            class="text-[10px] text-gray-400 font-medium uppercase tracking-wide text-center">Dados</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div
+                            class="size-14 rounded-2xl bg-surface-dark border border-white/5 flex items-center justify-center shadow-[0_0_15px_rgba(13,89,242,0.15)] transition-shadow">
+                            <span class="material-symbols-outlined text-white text-[28px]">model_training</span>
+                        </div>
+                        <span
+                            class="text-[10px] text-gray-400 font-medium uppercase tracking-wide text-center">LLMs</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div
+                            class="size-14 rounded-2xl bg-surface-dark border border-white/5 flex items-center justify-center shadow-[0_0_15px_rgba(240,0,255,0.15)] transition-shadow">
+                            <span class="material-symbols-outlined text-white text-[28px]">api</span>
+                        </div>
+                        <span
+                            class="text-[10px] text-gray-400 font-medium uppercase tracking-wide text-center">APIs</span>
+                    </div>
+                </div>
+            </section>
+            <section id="processo" class="px-6 py-12 bg-surface-dark/50">
+                <h2 class="text-white text-2xl font-bold mb-8 flex items-center gap-2">
+                    <span class="w-1 h-6 bg-primary rounded-full"></span>
+                    Processo
+                </h2>
+                <div class="relative pl-4 border-l border-white/10 space-y-10 ml-2">
+                    <div class="relative pl-8">
+                        <div
+                            class="absolute -left-[21px] top-0 bg-background-dark border border-primary text-primary w-10 h-10 rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(13,89,242,0.3)]">
+                            <span class="material-symbols-outlined text-sm">search</span>
+                        </div>
+                        <h3 class="text-white text-lg font-bold mb-1">Discovery</h3>
+                        <p class="text-gray-400 text-sm">Desenvolvedor de Automações Digitais especializado em traduzir
+                            necessidades de negócios complexas em soluções tecnológicas elegantes.</p>
+                    </div>
+                    <div class="relative pl-8">
+                        <div
+                            class="absolute -left-[21px] top-0 bg-background-dark border border-accent-magenta text-accent-magenta w-10 h-10 rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(240,0,255,0.3)]">
+                            <span class="material-symbols-outlined text-sm">code</span>
+                        </div>
+                        <h3 class="text-white text-lg font-bold mb-1">Build &amp; Train</h3>
+                        <p class="text-gray-400 text-sm">Desenvolvimento ágil e treinamento de modelos de IA.</p>
+                    </div>
+                    <div class="relative pl-8">
+                        <div
+                            class="absolute -left-[21px] top-0 bg-background-dark border border-white/20 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <span class="material-symbols-outlined text-sm">rocket_launch</span>
+                        </div>
+                        <h3 class="text-white text-lg font-bold mb-1">Deploy &amp; Scale</h3>
+                        <p class="text-gray-400 text-sm">Implementação em produção e monitoramento contínuo.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="px-6 py-12">
+                <h2 class="text-white text-2xl font-bold mb-6">Portfólio Recente</h2>
+                <div class="flex flex-col gap-8">
+                    <div class="group rounded-xl overflow-hidden bg-surface-dark border border-white/5">
+                        <div class="aspect-video bg-cover bg-center w-full"
+                            data-alt="Screenshot of a fintech dashboard with dark theme and data charts"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQ3KRDwj4QeDODuYkQoSMkCDIKjC0GUN7SspZj_1ewMobjLSZYhkGdJ1m7k6RsMRguvtr_l2Zob2pDmCUP5qWHdvoXj8PprpUE1N0rqmXMayMcr547VH9btnnROtoHQBck1ar7dljlgEndauJVhTwiiMuusoMJo5GXCPbb8Vd1U4ahsfifrphTFMMUaL7pIAP0M9CSnKBAbohT-m9loEjQl6Lb8utvmnpXysTG_ou2wYNPPsAt2KqMzJFeJDOjBMTnchGz1MpgWg");'>
+                            <div class="w-full h-full bg-black/40 group-hover:bg-black/20 transition-all"></div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex gap-2 mb-3 flex-wrap">
+                                <span
+                                    class="px-2 py-1 bg-primary/10 text-primary text-[10px] uppercase font-bold tracking-wider rounded">Fintech</span>
+                                <span
+                                    class="px-2 py-1 bg-white/5 text-gray-300 text-[10px] uppercase font-bold tracking-wider rounded">Python</span>
+                            </div>
+                            <h3 class="text-white text-xl font-bold mb-2">Predictive Analytics Dashboard</h3>
+                            <p class="text-gray-400 text-sm mb-4">Plataforma de previsão de churn para banco digital
+                                usando Machine Learning.</p>
+                            <button
+                                class="w-full h-10 rounded border border-white/20 text-white text-sm font-semibold hover:bg-white hover:text-black transition-colors">
+                                Ver Case
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group rounded-xl overflow-hidden bg-surface-dark border border-white/5">
+                        <div class="aspect-video bg-cover bg-center w-full"
+                            data-alt="Abstract representation of a chatbot interface with neural nodes"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOyywIgag9flWqwtiK2uzM-oJDp3pLdXPM_y6aoec0Uqx886FjTvPN1XPB15SIji9YG0Vvh4AdH4BUSMJSPc94a8Sj6jRe7KDK7GZdDv31Ypa9jboN-9nKBpS5TAXb2jaX4ssU1EGkZ-xM32dvInVSWzA-v7xVXgudv_IDBc4NOrW14SgtlyA9UfFLpzp7wnqZqLQUli7wkOCE6tkfnhj-XrARmuDR-ORqB-ag9NRB3hZ6aqkuT5NePk0aFcCS0NHYGAq_cBXCVw");'>
+                            <div class="w-full h-full bg-black/40 group-hover:bg-black/20 transition-all"></div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex gap-2 mb-3 flex-wrap">
+                                <span
+                                    class="px-2 py-1 bg-accent-magenta/10 text-accent-magenta text-[10px] uppercase font-bold tracking-wider rounded">Healthcare</span>
+                                <span
+                                    class="px-2 py-1 bg-white/5 text-gray-300 text-[10px] uppercase font-bold tracking-wider rounded">OpenAI
+                                    API</span>
+                            </div>
+                            <h3 class="text-white text-xl font-bold mb-2">MediBot AI Assistant</h3>
+                            <p class="text-gray-400 text-sm mb-4">Assistente de triagem médica automatizado com
+                                integração EHR.</p>
+                            <button
+                                class="w-full h-10 rounded border border-white/20 text-white text-sm font-semibold hover:bg-white hover:text-black transition-colors">
+                                Ver Case
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sobre" class="px-6 py-12 bg-surface-dark/30">
+                <div class="flex flex-col gap-6">
+                    <div class="w-24 h-24 rounded-full bg-cover bg-center border-2 border-primary shadow-[0_0_15px_rgba(13,89,242,0.3)]"
+                        data-alt="Portrait of the professional AI Architect"
+                        style='background-image: url("assets/profile.jpg");'></div>
+                    <div>
+                        <h2 class="text-white text-2xl font-bold mb-3">Quem Sou Eu</h2>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Sou um Desenvolvedor de Automações Digitais especializado em traduzir necessidades de
+                            negócios complexas em soluções tecnológicas elegantes.
+                        </p>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Não entrego apenas linhas de código; crio sistemas vivos e escaláveis que evoluem junto com
+                            sua empresa. Ao unir os princípios sólidos da Engenharia de Software com a adaptabilidade da
+                            IA Generativa, construo a infraestrutura necessária para transformar sua operação em uma
+                            verdadeira vantagem competitiva.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="px-6 py-12">
+                <h2 class="text-white text-2xl font-bold mb-6">Perguntas Frequentes</h2>
+                <div class="space-y-4">
+                    <details class="group bg-surface-dark rounded-lg border border-white/5">
+                        <summary
+                            class="flex justify-between items-center p-4 cursor-pointer font-medium text-white text-sm">
+                            <span>Como funciona o orçamento?</span>
+                            <span
+                                class="material-symbols-outlined text-gray-500 transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-gray-400 text-sm leading-relaxed border-t border-white/5 pt-3">
+                            Trabalho com projetos de escopo fechado ou alocação por horas (squad as a service),
+                            dependendo da complexidade e necessidade do seu negócio.
+                        </div>
+                    </details>
+                    <details class="group bg-surface-dark rounded-lg border border-white/5">
+                        <summary
+                            class="flex justify-between items-center p-4 cursor-pointer font-medium text-white text-sm">
+                            <span>Você desenvolve o design também?</span>
+                            <span
+                                class="material-symbols-outlined text-gray-500 transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-gray-400 text-sm leading-relaxed border-t border-white/5 pt-3">
+                            Sim, possuo parceiros de UI/UX que colaboram nos projetos para garantir que a interface seja
+                            tão robusta quanto o código.
+                        </div>
+                    </details>
+                    <details class="group bg-surface-dark rounded-lg border border-white/5">
+                        <summary
+                            class="flex justify-between items-center p-4 cursor-pointer font-medium text-white text-sm">
+                            <span>Quais tecnologias você usa?</span>
+                            <span
+                                class="material-symbols-outlined text-gray-500 transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="px-4 pb-4 text-gray-400 text-sm leading-relaxed border-t border-white/5 pt-3">
+                            Principalmente Python, TensorFlow, PyTorch, LangChain, OpenAI API, AWS, Azure e Docker.
+                        </div>
+                    </details>
+                </div>
+            </section>
+            <footer class="px-6 py-12 bg-[#050505] border-t border-white/5">
+                <section id="contato" class="px-6 py-12">
+                    <h2 class="text-white text-2xl font-bold mb-2">Vamos conversar?</h2>
+                    <p class="text-gray-400 text-sm mb-8">Preencha o formulário e retornarei em até 24h.</p>
+                    <form id="contact-form" class="flex flex-col gap-4 mb-10">
+                        <div class="flex flex-col gap-1.5">
+                            <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Nome</label>
+                            <input required
+                                class="w-full bg-surface-dark border border-white/10 rounded-lg h-12 px-4 text-white focus:outline-none focus:border-primary transition-colors placeholder-gray-600"
+                                placeholder="Seu nome" type="text" />
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Email</label>
+                            <input required
+                                class="w-full bg-surface-dark border border-white/10 rounded-lg h-12 px-4 text-white focus:outline-none focus:border-primary transition-colors placeholder-gray-600"
+                                placeholder="seu@email.com" type="email" />
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <label
+                                class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Mensagem</label>
+                            <textarea required
+                                class="w-full bg-surface-dark border border-white/10 rounded-lg h-32 p-4 text-white focus:outline-none focus:border-primary transition-colors resize-none placeholder-gray-600"
+                                placeholder="Como posso ajudar?"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="mt-2 w-full h-12 rounded-lg bg-gradient-to-r from-primary to-accent-magenta text-black font-bold text-base shadow-lg hover:opacity-90 transition-opacity">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                    <div class="flex flex-col items-center gap-6 border-t border-white/5 pt-8">
+                        <div class="flex gap-6">
+                            <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                                <span class="text-sm font-semibold">LinkedIn</span>
+                            </a>
+                            <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                                <span class="text-sm font-semibold">GitHub</span>
+                            </a>
+                            <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                                <span class="text-sm font-semibold">Twitter</span>
+                            </a>
+                        </div>
+                        <p class="text-gray-600 text-xs text-center">
+                            © 2024 Q-aura Automações Portfolio.<br />Todos os direitos reservados.
+                        </p>
+                    </div>
+                </section>
+            </footer>
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const closeBtn = document.getElementById('close-drawer');
+            const drawer = document.getElementById('mobile-drawer');
+
+            menuBtn.addEventListener('click', () => drawer.classList.remove('translate-x-full'));
+            closeBtn.addEventListener('click', () => drawer.classList.add('translate-x-full'));
+
+            document.querySelectorAll('.smooth-scroll').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        drawer.classList.add('translate-x-full');
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('button');
+                const originalText = btn.innerText;
+
+                btn.innerText = 'Redirecionando...';
+                btn.disabled = true;
+
+                const whatsappUrl = `https://wa.me/5562993473656?text=${encodeURIComponent('Olá, gostaria de saber mais sobre a Q-aura!')}`;
+
+                setTimeout(() => {
+                    window.open(whatsappUrl, '_blank');
+                    btn.innerText = 'Enviado!';
+                    form.reset();
+                    setTimeout(() => {
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    }, 3000);
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+
+</html>
