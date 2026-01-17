@@ -664,22 +664,22 @@
                         Intersecção entre código limpo e inteligência cognitiva. Resultados reais aplicados à indústria.
                     </p>
                 </div>
-                <div class="flex flex-wrap justify-center gap-3 mb-12">
-                    <button
-                        class="px-6 py-2.5 rounded-full bg-primary/10 border border-primary text-primary font-bold text-sm tracking-wide shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-transform hover:scale-105">Todos</button>
-                    <button
-                        class="px-6 py-2.5 rounded-full bg-surface-light border border-white/10 text-gray-400 hover:text-white hover:border-accent hover:shadow-[0_0_15px_rgba(255,0,255,0.3)] transition-all font-medium text-sm">IA
+                <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-buttons">
+                    <button data-filter="all"
+                        class="filter-btn active px-6 py-2.5 rounded-full bg-primary/10 border border-primary text-primary font-bold text-sm tracking-wide shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-transform hover:scale-105">Todos</button>
+                    <button data-filter="ai"
+                        class="filter-btn px-6 py-2.5 rounded-full bg-surface-light border border-white/10 text-gray-400 hover:text-white hover:border-accent hover:shadow-[0_0_15px_rgba(255,0,255,0.3)] transition-all font-medium text-sm">IA
                         &amp; Agentes</button>
-                    <button
-                        class="px-6 py-2.5 rounded-full bg-surface-light border border-white/10 text-gray-400 hover:text-white hover:border-primary hover:shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-all font-medium text-sm">Full
+                    <button data-filter="fullstack"
+                        class="filter-btn px-6 py-2.5 rounded-full bg-surface-light border border-white/10 text-gray-400 hover:text-white hover:border-primary hover:shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-all font-medium text-sm">Full
                         Stack</button>
-                    <button
-                        class="px-6 py-2.5 rounded-full bg-surface-light border border-white/10 text-gray-400 hover:text-white hover:border-accent hover:shadow-[0_0_15px_rgba(255,0,255,0.3)] transition-all font-medium text-sm">Automação
+                    <button data-filter="crm"
+                        class="filter-btn px-6 py-2.5 rounded-full bg-surface-light border border-white/10 text-gray-400 hover:text-white hover:border-accent hover:shadow-[0_0_15px_rgba(255,0,255,0.3)] transition-all font-medium text-sm">Automação
                         CRM</button>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div
-                        class="group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-primary/50 transition-all duration-500">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
+                    <div data-category="ai"
+                        class="project-card group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-primary/50 transition-all duration-500">
                         <div
                             class="absolute inset-0 p-8 flex flex-col justify-between z-10 transition-opacity duration-300 group-hover:opacity-20">
                             <div>
@@ -730,8 +730,8 @@
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-accent/50 transition-all duration-500">
+                    <div data-category="crm"
+                        class="project-card group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-accent/50 transition-all duration-500">
                         <div
                             class="absolute inset-0 p-8 flex flex-col justify-between z-10 transition-opacity duration-300 group-hover:opacity-20">
                             <div>
@@ -779,8 +779,8 @@
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-primary/50 transition-all duration-500">
+                    <div data-category="fullstack"
+                        class="project-card group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-primary/50 transition-all duration-500">
                         <div
                             class="absolute inset-0 p-8 flex flex-col justify-between z-10 transition-opacity duration-300 group-hover:opacity-20">
                             <div>
@@ -829,8 +829,8 @@
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-accent/50 transition-all duration-500">
+                    <div data-category="ai"
+                        class="project-card group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-accent/50 transition-all duration-500">
                         <div
                             class="absolute inset-0 p-8 flex flex-col justify-between z-10 transition-opacity duration-300 group-hover:opacity-20">
                             <div>
@@ -879,8 +879,8 @@
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-primary/50 transition-all duration-500">
+                    <div data-category="fullstack"
+                        class="project-card group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-primary/50 transition-all duration-500">
                         <div
                             class="absolute inset-0 p-8 flex flex-col justify-between z-10 transition-opacity duration-300 group-hover:opacity-20">
                             <div>
@@ -929,8 +929,8 @@
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-accent/50 transition-all duration-500">
+                    <div data-category="ai"
+                        class="project-card group relative h-[400px] rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-accent/50 transition-all duration-500">
                         <div
                             class="absolute inset-0 p-8 flex flex-col justify-between z-10 transition-opacity duration-300 group-hover:opacity-20">
                             <div>
@@ -1192,6 +1192,41 @@
                                 btn.disabled = false;
                             }, 3000);
                         }, 1000);
+                    });
+                    // Project Filtering
+                    const filterButtons = document.querySelectorAll('.filter-btn');
+                    const projectCards = document.querySelectorAll('.project-card');
+
+                    filterButtons.forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const filter = btn.getAttribute('data-filter');
+
+                            // Update active button style
+                            filterButtons.forEach(b => {
+                                b.classList.remove('active', 'bg-primary/10', 'border-primary', 'text-primary', 'shadow-[0_0_15px_rgba(0,240,255,0.3)]');
+                                b.classList.add('bg-surface-light', 'border-white/10', 'text-gray-400');
+                            });
+
+                            btn.classList.add('active', 'bg-primary/10', 'border-primary', 'text-primary', 'shadow-[0_0_15px_rgba(0,240,255,0.3)]');
+                            btn.classList.remove('bg-surface-light', 'border-white/10', 'text-gray-400');
+
+                            // Filter projects
+                            projectCards.forEach(card => {
+                                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                                    card.style.display = 'block';
+                                    setTimeout(() => {
+                                        card.style.opacity = '1';
+                                        card.style.transform = 'scale(1)';
+                                    }, 10);
+                                } else {
+                                    card.style.opacity = '0';
+                                    card.style.transform = 'scale(0.95)';
+                                    setTimeout(() => {
+                                        card.style.display = 'none';
+                                    }, 300);
+                                }
+                            });
+                        });
                     });
                 });
             </script>

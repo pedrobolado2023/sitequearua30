@@ -307,8 +307,17 @@
             </section>
             <section id="portfolio" class="px-6 py-12">
                 <h2 class="text-white text-2xl font-bold mb-6">Portfólio Recente</h2>
-                <div class="flex flex-col gap-8">
-                    <div class="group rounded-xl overflow-hidden bg-surface-dark border border-white/5">
+                <div class="flex flex-wrap gap-2 mb-8" id="mobile-filter-buttons">
+                    <button data-filter="all"
+                        class="mobile-filter-btn active px-4 py-1.5 rounded-full bg-primary/20 border border-primary text-primary font-bold text-xs tracking-wide shadow-[0_0_10px_rgba(0,240,255,0.2)]">Todos</button>
+                    <button data-filter="fintech"
+                        class="mobile-filter-btn px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-400 font-medium text-xs">Fintech</button>
+                    <button data-filter="healthcare"
+                        class="mobile-filter-btn px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-400 font-medium text-xs">Healthcare</button>
+                </div>
+                <div class="flex flex-col gap-8" id="mobile-project-grid">
+                    <div data-category="fintech"
+                        class="mobile-project-card group rounded-xl overflow-hidden bg-surface-dark border border-white/5 transition-all duration-300">
                         <div class="aspect-video bg-cover bg-center w-full"
                             data-alt="Screenshot of a fintech dashboard with dark theme and data charts"
                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQ3KRDwj4QeDODuYkQoSMkCDIKjC0GUN7SspZj_1ewMobjLSZYhkGdJ1m7k6RsMRguvtr_l2Zob2pDmCUP5qWHdvoXj8PprpUE1N0rqmXMayMcr547VH9btnnROtoHQBck1ar7dljlgEndauJVhTwiiMuusoMJo5GXCPbb8Vd1U4ahsfifrphTFMMUaL7pIAP0M9CSnKBAbohT-m9loEjQl6Lb8utvmnpXysTG_ou2wYNPPsAt2KqMzJFeJDOjBMTnchGz1MpgWg");'>
@@ -330,7 +339,8 @@
                             </button>
                         </div>
                     </div>
-                    <div class="group rounded-xl overflow-hidden bg-surface-dark border border-white/5">
+                    <div data-category="healthcare"
+                        class="mobile-project-card group rounded-xl overflow-hidden bg-surface-dark border border-white/5 transition-all duration-300">
                         <div class="aspect-video bg-cover bg-center w-full"
                             data-alt="Abstract representation of a chatbot interface with neural nodes"
                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOyywIgag9flWqwtiK2uzM-oJDp3pLdXPM_y6aoec0Uqx886FjTvPN1XPB15SIji9YG0Vvh4AdH4BUSMJSPc94a8Sj6jRe7KDK7GZdDv31Ypa9jboN-9nKBpS5TAXb2jaX4ssU1EGkZ-xM32dvInVSWzA-v7xVXgudv_IDBc4NOrW14SgtlyA9UfFLpzp7wnqZqLQUli7wkOCE6tkfnhj-XrARmuDR-ORqB-ag9NRB3hZ6aqkuT5NePk0aFcCS0NHYGAq_cBXCVw");'>
@@ -505,6 +515,42 @@
                         btn.disabled = false;
                     }, 3000);
                 }, 1000);
+            });
+
+            // Mobile Project Filtering
+            const mobileFilterBtns = document.querySelectorAll('.mobile-filter-btn');
+            const mobileProjectCards = document.querySelectorAll('.mobile-project-card');
+
+            mobileFilterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-filter');
+
+                    // Update active button style
+                    mobileFilterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-primary/20', 'border-primary', 'text-primary', 'shadow-[0_0_10px_rgba(0,240,255,0.2)]');
+                        b.classList.add('bg-white/5', 'border-white/10', 'text-gray-400');
+                    });
+
+                    btn.classList.add('active', 'bg-primary/20', 'border-primary', 'text-primary', 'shadow-[0_0_10px_rgba(0,240,255,0.2)]');
+                    btn.classList.remove('bg-white/5', 'border-white/10', 'text-gray-400');
+
+                    // Filter projects
+                    mobileProjectCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
             });
         });
     </script>
